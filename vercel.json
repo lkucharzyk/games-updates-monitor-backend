@@ -1,7 +1,7 @@
 {
   "rewrites": [
-    { "source": "/api/(.*)", "destination": "/api-store" },
-    { "source": "/ISteamNews/(.*)", "destination": "/api-api" },
-    { "source": "/ISteamApps/(.*)", "destination": "/api-api" }
+    { "source": "/api/(.*)", "destination": "api/api-store" },
+    { "source": "/ISteamNews/(.*)", "destination": "api/api-api" },
+    { "source": "/ISteamApps/(.*)", "destination": "api/api-api" }
   ]
 }
