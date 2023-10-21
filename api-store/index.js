@@ -1,5 +1,11 @@
 const { createProxyMiddleware } = require("http-proxy-middleware");
 
+export const config = {
+  api: {
+    bodyParser: false,
+  },
+};
+
 const apiProxy = createProxyMiddleware({
   target: "https://store.steampowered.com",
   changeOrigin: true,

@@ -1,4 +1,9 @@
 const { createProxyMiddleware } = require("http-proxy-middleware");
+export const config = {
+  api: {
+    bodyParser: false,
+  },
+};
 
 const apiProxy = createProxyMiddleware({
   target: "https://api.steampowered.com",
@@ -9,6 +14,6 @@ const apiProxy = createProxyMiddleware({
 });
 
 // Expose the proxy on the "/api/*" endpoint.
-module.exports = function (req, res) {
+export default function (req, res) {
   return apiProxy(req, res);
-};
+}
