@@ -13,10 +13,10 @@
   "dependencies": {
     "cors": "^2.8.5",
     "express": "^4.18.2",
+    "http-proxy-middleware": "^2.0.6",
     "uuid": "^9.0.1"
   },
   "devDependencies": {
-    "http-proxy-middleware": "^2.0.6",
     "vercel": "^32.5.0"
   }
 }

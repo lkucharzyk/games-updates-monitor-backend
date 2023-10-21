@@ -4,8 +4,7 @@ const apiProxy = createProxyMiddleware({
   target: "https://api.steampowered.com",
   changeOrigin: true,
   onProxyRes(proxyRes) {
-    proxyRes.headers["x-added"] = "foobar"; // add new header to response
-    delete proxyRes.headers["x-removed"]; // remove header from response
+    proxyRes.headers["access-control-allow-origin"] = "*";
   },
 });
 
