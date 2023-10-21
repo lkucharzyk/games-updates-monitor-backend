@@ -5,7 +5,7 @@ var app = express();
 var cors = require("cors");
 
 var PORT = 443;
-var HOST = "games-updates-monitor-backend.onrender.com";
+var HOST = "games-updates-monitor-backend.vercel.app";
 
 var API_URL = "https://store.steampowered.com";
 var API_URL2 = "https://api.steampowered.com";
